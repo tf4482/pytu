@@ -106,11 +106,6 @@ For deploying this application on a live system, you can follow standard Python 
 
 ![image](https://github.com/tf4482/pytu/assets/107394980/f3608356-9db6-4972-8fa2-b6b215f068db) ![image](https://github.com/tf4482/pytu/assets/107394980/f8b3e71e-66b2-4630-82ae-74e1e3ef4dac) ![image](https://github.com/tf4482/pytu/assets/107394980/937a0524-04b0-4537-95db-7e5d41a8e73d)
 
-
-
-
-
-
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@tf4482](https://github.com/tf4482) - Developer
