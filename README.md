@@ -1,18 +1,15 @@
 <h1 align="center">pytu</h1>
-<h2 align="center">python tunneler</h1>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+![Status](https://img.shields.io/badge/status-active-success.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
 ---
 
-<p align="center"> A simple Python-based application to manage SSH tunnels using PyQt5. </p>
+<p align="center">Python tunneler. A simple Python-based application to manage existing SSH tunnels using PyQt5.</p>
 
 ## 📝 Table of Contents
 
@@ -23,7 +20,7 @@
 - [Built Using](#built_using)
 - [Authors](#authors)
 
-## 🧐 About <a name = "about"></a>
+## 🚀 About <a name = "about"></a>
 
 Tunnel Manager is a Python application that provides a user interface fpr WIndows to manage SSH tunnels conveniently. It allows users to start, stop, and monitor SSH tunnels easily.
 
@@ -31,7 +28,7 @@ Tunnel Manager is a Python application that provides a user interface fpr WIndow
 
 To get a copy of the project up and running on your local machine, follow these steps:
 
-### Prerequisites
+## Prerequisites
 
 ```
 Windows 10+ (just tested it on 11 so far).
@@ -40,7 +37,7 @@ Have the SSH connections already set up and configured.
 ```
 
 
-### 💻 Installation
+## 💻 Installation
 
 Clone the repository:
 
@@ -65,33 +62,43 @@ pip install -r requirements.txt
 ```
 Define your connections in pytu.json
 
+{
+    "tunnels": [
       {
-        "name": "Tunnel 1",
+        "name": "Tunnel to Ubuntu on Homeserver",
         "ssh": {
-          "port": 12345,
+          "port": 22,
           "options": ["-f", "-N"],
           "forwardings": [
             {
-              "local_port": 8001,
+              "local_port": 81,
               "remote_host": "localhost",
-              "remote_port": 8000
+              "remote_port": 80
             },
             {
-              "local_port": 3307,
+              "local_port": 8081,
               "remote_host": "localhost",
-              "remote_port": 3306
+              "remote_port": 8080
+            },
+            {
+              "local_port": 8096,
+              "remote_host": "localhost",
+              "remote_port": 8096
             }
           ],
-          "host": "192.168.1.100"
+          "user": "username",
+          "host": "192.168.0.1"
         }
       },
+      […]
+
 ```
 
 ## 🎈 Usage <a name="usage"></a>
 
 To use the application, simply run the Python script `pytu.py`. This will launch the Tunnel Manager user interface, where you can start, stop, and monitor SSH tunnels.
 
-## 🚀 Deployment <a name = "deployment"></a>
+## 🏗️ Deployment <a name = "deployment"></a>
 
 For deploying this application on a live system, you can follow standard Python deployment procedures.
 
@@ -102,7 +109,7 @@ For deploying this application on a live system, you can follow standard Python 
 - [psutil](https://github.com/giampaolo/psutil) - Process Utilities
 - [subprocess](https://docs.python.org/3/library/subprocess.html) - Subprocess Management
 
-## Screenshots 📸
+## 📸 Screenshots
 
 ![image](https://github.com/tf4482/pytu/assets/107394980/f3608356-9db6-4972-8fa2-b6b215f068db) ![image](https://github.com/tf4482/pytu/assets/107394980/f8b3e71e-66b2-4630-82ae-74e1e3ef4dac) ![image](https://github.com/tf4482/pytu/assets/107394980/937a0524-04b0-4537-95db-7e5d41a8e73d)
 
@@ -110,9 +117,10 @@ For deploying this application on a live system, you can follow standard Python 
 
 - [@tf4482](https://github.com/tf4482) - Developer
 
-## License 📜
+## 📜 License
 
 Distributed under the MIT License. See LICENSE for more information.
 
-**Project Link:** [https://github.com/tf482/improvo](https://github.com/tf482/improvo)
+**Project Link:** [https://github.com/tf482/pytu](https://github.com/tf482/pytu)
+**Project Link:** [https://github.com/tf482/pytu](https://github.com/tf482/pytu)
 
