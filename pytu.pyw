@@ -80,7 +80,7 @@ class TunnelManagerUI(QWidget):
         self.worker.update_signal.connect(self.update_status)
         self.worker.start()
 
-        self.setWindowTitle("Python Tunneler")
+        self.setWindowTitle("python tunneler")
 
     def create_ui(self):
         self.btn_start_all = QPushButton("Start All", self)
