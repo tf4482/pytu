@@ -22,7 +22,7 @@
 
 ## 🚀 About <a name = "about"></a>
 
-Tunnel Manager is a Python application that provides a user interface fpr WIndows to manage SSH tunnels conveniently. It allows users to start, stop, and monitor SSH tunnels easily.
+Tunnel Manager is a Python application that provides a user interface for Windows to manage SSH tunnels conveniently. It allows users to start, stop, and monitor SSH tunnels easily.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -59,9 +59,9 @@ pip install -r requirements.txt
 
 ## 🔧 Configuration
 
-```
 Define your connections in pytu.json
 
+```json
 {
     "tunnels": [
       {
@@ -90,8 +90,8 @@ Define your connections in pytu.json
           "host": "192.168.0.1"
         }
       },
+      
       […]
-
 ```
 
 ## 🎈 Usage <a name="usage"></a>
