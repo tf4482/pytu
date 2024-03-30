@@ -1,29 +1,51 @@
 {
     "tunnels": [
       {
-        "name": "Tunnel 1",
+        "name": "Tunnel to Ubuntu on Homeserver",
         "ssh": {
-          "port": 12345,
+          "port": 22,
           "options": ["-f", "-N"],
           "forwardings": [
             {
-              "local_port": 8001,
+              "local_port": 81,
               "remote_host": "localhost",
-              "remote_port": 8000
+              "remote_port": 80
             },
+            {
+              "local_port": 8081,
+              "remote_host": "localhost",
+              "remote_port": 8080
+            },
+            {
+              "local_port": 8096,
+              "remote_host": "localhost",
+              "remote_port": 8096
+            }
+          ],
+          "user": "username",
+          "host": "192.168.0.1"
+        }
+      },
+      {
+        "name": "Tunnel to Windows 10 on Mums PC",
+        "ssh": {
+          "port": 22,
+          "options": ["-f", "-N"],
+          "forwardings": [
             {
               "local_port": 3307,
               "remote_host": "localhost",
               "remote_port": 3306
             }
           ],
-          "host": "192.168.1.100"
+          "user": "daddy",
+          "host": "192.168.0.2"
         }
       },
       {
-        "name": "Tunnel 2",
+        "name": "Tunnel to Termux on Pixel",
         "ssh": {
-          "port": 23456,
+          "port": 22,
           "options": ["-f", "-N"],
           "forwardings": [
             {
@@ -32,24 +54,9 @@
               "remote_port": 3306
             }
           ],
-          "host": "192.168.1.101"
-        }
-      },
-      {
-        "name": "Tunnel 3",
-        "ssh": {
-          "port": 34567,
-          "options": ["-f", "-N"],
-          "forwardings": [
-            {
-              "local_port": 3309,
-              "remote_host": "localhost",
-              "remote_port": 3306
-            }
-          ],
-          "host": "192.168.1.102"
+          "user": "defaultuser",
+          "host": "192.168.0.96"
         }
       }
     ]
   }
-  
