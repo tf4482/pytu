@@ -1,5 +1,5 @@
-
-<h1 align="center">Tunnel Manager</h1>
+<h1 align="center">pytu</h1>
+<h2 align="center">python tunneler</h1>
 
 <div align="center">
 
